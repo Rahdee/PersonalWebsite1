@@ -1,0 +1,61 @@
+body { 
+    margin: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .header {
+    overflow: hidden;
+    width: auto;
+    height: fit-content;
+    background-color: #412520;
+    padding: 13.5px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: beige;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 26.5px; 
+    line-height: 20px;
+    border-radius: 4px;
+    margin: 10px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-image: 
+   linear-gradient(to right, #CEA138 , #D3C063,#D7BC5A,#C2AE4E);
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    color: beige;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: right;
+      display:inline;
+      text-align: center;
+    }
+    .header-right {
+      float: right;
+    }
+  }
+
+  
